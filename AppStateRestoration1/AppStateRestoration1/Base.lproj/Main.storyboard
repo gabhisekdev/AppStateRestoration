@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAF-xq-A10">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comic World-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ComicWorldController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ComicWorldController" customModule="AppRestorationExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpI-H9-Thr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comic World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-yU-uUV">
+                                        <rect key="frame" x="136.5" y="22" width="102" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.043413348495960236" green="0.58880478143692017" blue="0.9335142970085144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pmI-yU-uUV" firstAttribute="centerY" secondItem="CpI-H9-Thr" secondAttribute="centerY" id="Gor-Ft-zfd"/>
+                                    <constraint firstItem="pmI-yU-uUV" firstAttribute="centerX" secondItem="CpI-H9-Thr" secondAttribute="centerX" id="c3U-2y-cBN"/>
+                                    <constraint firstAttribute="height" constant="64" id="efG-7X-SnN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C2x-5n-FRH">
+                                <rect key="frame" x="20" y="84" width="335" height="514"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengers" translatesAutoresizingMaskIntoConstraints="NO" id="0dt-SB-1TD">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="247"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JL" translatesAutoresizingMaskIntoConstraints="NO" id="9f3-ya-bui">
+                                        <rect key="frame" x="0.0" y="267" width="335" height="247"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2x-5n-FRH" secondAttribute="trailing" constant="20" id="3A4-20-Dno"/>
+                            <constraint firstItem="CpI-H9-Thr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Exd-x4-ylW"/>
+                            <constraint firstItem="C2x-5n-FRH" firstAttribute="top" secondItem="CpI-H9-Thr" secondAttribute="bottom" constant="20" id="G1M-wt-ht2"/>
+                            <constraint firstItem="CpI-H9-Thr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fLn-jg-wSf"/>
+                            <constraint firstItem="CpI-H9-Thr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hhR-Vx-IN3"/>
+                            <constraint firstItem="C2x-5n-FRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q4d-gs-9Je"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C2x-5n-FRH" secondAttribute="bottom" constant="20" id="sT0-QU-UX8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Comic World" id="oWA-jH-GSn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--Super Hero Mode-->
+        <scene sceneID="ekj-1t-7P6">
+            <objects>
+                <viewController storyboardIdentifier="PhotosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TgM-lN-tUz" customClass="PhotosViewController" customModule="AppRestorationExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rL-yu-Xtl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-dx-Ym0">
+                                <rect key="frame" x="16" y="40" width="343" height="493"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYH-Jz-9Xz">
+                                <rect key="frame" x="158.5" y="563" width="58" height="30"/>
+                                <state key="normal" title="SWITCH"/>
+                                <connections>
+                                    <action selector="switchItems:" destination="TgM-lN-tUz" eventType="touchUpInside" id="E7u-Q1-lgq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rcv-XM-bxa" firstAttribute="trailing" secondItem="UGm-dx-Ym0" secondAttribute="trailing" constant="16" id="B2i-S8-OVl"/>
+                            <constraint firstItem="Rcv-XM-bxa" firstAttribute="bottom" secondItem="hYH-Jz-9Xz" secondAttribute="bottom" constant="25" id="QZX-Ra-ijd"/>
+                            <constraint firstItem="hYH-Jz-9Xz" firstAttribute="centerX" secondItem="Rcv-XM-bxa" secondAttribute="centerX" id="W9U-9Z-gdO"/>
+                            <constraint firstItem="hYH-Jz-9Xz" firstAttribute="top" secondItem="UGm-dx-Ym0" secondAttribute="bottom" constant="30" id="eAd-5a-Qap"/>
+                            <constraint firstItem="UGm-dx-Ym0" firstAttribute="top" secondItem="Rcv-XM-bxa" secondAttribute="top" constant="20" id="kvH-R3-wzD"/>
+                            <constraint firstItem="UGm-dx-Ym0" firstAttribute="leading" secondItem="Rcv-XM-bxa" secondAttribute="leading" constant="16" id="nlF-qB-7e4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rcv-XM-bxa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Super Hero Mode" id="Zbm-CR-290"/>
+                    <connections>
+                        <outlet property="superHeroImageView" destination="UGm-dx-Ym0" id="did-WC-aaA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcr-xe-Wml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="909.89505247376314"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wh8-W9-kgP">
+            <objects>
+                <tabBarController storyboardIdentifier="ToDoTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MAF-xq-A10" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1di-4a-5lh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Xpg-1S-L3l"/>
+                        <segue destination="TgM-lN-tUz" kind="relationship" relationship="viewControllers" id="4Cg-Sl-8rh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mK-cU-gsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JL" width="600" height="400"/>
+        <image name="avengers" width="446" height="299"/>
+    </resources>
+</document>
