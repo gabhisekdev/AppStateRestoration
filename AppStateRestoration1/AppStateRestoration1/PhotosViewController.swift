@@ -46,7 +46,8 @@ extension PhotosViewController {
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
-        selectedSuperheroId = SuperHeroType(rawValue: coder.decodeInteger(forKey: "imageId")) ?? .batman
+        guard let id = SuperHeroType(rawValue: coder.decodeInteger(forKey: "imageId")) else { return }
+        selectedSuperheroId =  id
         setImage()
     }
 }
